@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>input</title>
+  </head>
+  <body>
+  	<h1>input</h1>
+
+	<hr>
+	<form action="/login_app" method="POST">
+		ID: <input type="text" name="id">
+		Password <input type="password"name="pwd">
+		<input type="submit" value="login">
+	</form>
+
+	<hr>
+	<form action="/address_app" method="POST">
+		神奈川<input type="radio" name="address" value="Kanagawa">
+        東京<input type="radio" name="address" value="Tokyo">
+        千葉<input type="radio" name="address" value="Chiba">
+        埼玉<input type="radio" name="address" value="Saitama">
+		<input type="submit" value="OK">
+	</form>
+
+  	<hr>
+  	<form action="/select_app" method="POST">
+  		<select name="favorite">
+  			<option value="">好きなものを選んでください</option>
+  			<option value="cat">ねこ</option>
+  			<option value="dog">いぬ</option>
+  			<option value="pig">豚</option>
+  			<option value="chicken">鶏</option>
+  			<option value="duck">鴨</option>
+  		</select>
+  		<input type="submit" value="OK">
+  	</form>
+  </body>
+  </html>
