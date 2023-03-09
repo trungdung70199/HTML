@@ -1,0 +1,46 @@
+<!-- HTML <picture> Element -->
+<!-- The HTML <picture>element gives web developers
+more flexibility in specifying image resources -->
+<!-- Show different images for different screen sizes -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        HTML picture element
+    </title>
+</head>
+<style>
+    h {
+        color: red;
+    }
+</style>
+<body>
+    <h2>
+        The picture element 
+    </h2>
+    <picture>
+        <source media="(min-width: 650px)" srcset="images/Eiffel.jfif">
+        <source media="(min-width:465px)" srcset="images/tree.jfif">
+        <img src="images/food.jfif" style="width:auto;">
+    </picture>
+    <p>
+        The <strong>Eiffel Tower</strong> is a wrought-iron lattice Tower
+        on the <mark>Champ de Mars</mark> in Paris, France.
+        It is named after the engineer <mark>Gustave Eiffel</mark>
+        whose company designed and built the Tower
+    </p>
+    <p>
+        The tower is 330 meters(1.083ft) tall, about the same height as 
+        an 81-storey building, and the tallest structure in Paris. Its
+        base is square, measuring 125 meters(410 ft) on each side. During
+        its construction, the Eiffel Tower surpassed the Washington Monument
+        to become the tallest structure in Paris.
+    </p>
+    <p>
+        <strong>Note:</strong> The picture element is not supported in
+        IE12 and earlier or Safari 9.0 and earlier
+    </p>
+</body>
+</html> 
