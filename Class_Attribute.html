@@ -1,0 +1,51 @@
+<!-- Use the Class Attribute in Javascript -->
+<!DOCTYPE html>
+<htm>
+    <head>
+        <style>
+            .city {
+                background-color: tomato;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Use of The class Attribute in Javascript
+        </h2>
+        <p>
+            Click the button to hide all elements
+            with class name "city:"
+        </p>
+        <button onclick="myFunction()">
+            Hide elements
+        </button>
+        <h2 class="city">
+            London
+        </h2>
+        <p>
+            London is the capital of England
+        </p>
+        <h2 class="city">
+            Paris
+        </h2>
+        <p>
+            Paris is the capital of France
+        </p>
+        <h2 class="city">
+            Hanoi
+        </h2>
+        <p>
+            Hanoi is the capital of Vietnam
+        </p>
+        <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("city");
+              for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+            }
+            </script>
+    </body>
+</htm>
